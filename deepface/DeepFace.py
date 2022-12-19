@@ -144,7 +144,7 @@ def verify(img1_path, img2_path = '', model_name = 'VGG-Face', distance_metric =
 
 	disable_option = (False if len(img_list) > 1 else True) or not prog_bar
 
-	pbar = tqdm(range(0,len(img_list)), desc='Verification', disable = disable_option)
+	pbar = tqdm(range(0,len(img_list)), desc='Verification', disable = True)
 
 	for index in pbar:
 
